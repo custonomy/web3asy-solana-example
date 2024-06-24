@@ -58,7 +58,7 @@ const Home: React.FC = () => {
     
     useEffect(() => {    
         const script = document.createElement("script");
-        script.src = "https://cwidget-uat.custonomy.io/index.js";    
+        script.src = "https://cwidget2.custonomy.io/index.js";    
         document.body.appendChild(script);
         
         window.addEventListener("message", function(event) {
