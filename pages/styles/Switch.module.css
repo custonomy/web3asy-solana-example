@@ -1,0 +1,49 @@
+.switchContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 16px;
+    padding: 10px;
+}
+
+.label {
+    font-size: 14px;
+    color: #333;
+    margin: 0 8px;
+}
+
+.switch {
+    position: relative;
+    display: inline-flex;
+    width: 44px;
+    height: 24px;
+    background-color: #ccc;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.switch.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.switchHandle {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.handleChecked {
+    transform: translateX(20px);
+}
+
+.handleUnchecked {
+    transform: translateX(0);
+}
